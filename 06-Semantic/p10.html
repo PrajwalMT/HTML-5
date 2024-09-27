@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMANTIC</title>
+    <style>
+        
+        dialog{
+            background-color: gray;
+            color: white;
+        }
+        </style>
+</head>
+<body>
+   <center>
+       <h3>DIALOG TAG..!</h3>
+       <p>The dialog element represents a part of an application that a user interacts with to perform a task, for example a dialog box, inspector, or window.</p>
+    </center>
+    <hr>
+    <button onclick="openDialog()">open Dialog</button>
+    <dialog>
+        <button onclick="closeDialog()">&times;</button>
+        <h2>Welcome!</h2>
+        <p>Please enter your name:</p>
+        <input type="text" id="name">
+        <button onclick="closeDialog()">submit</button>
+    </dialog>
+    <script>
+        function openDialog(){
+            document.querySelector('dialog').showModal();
+        }
+        function closeDialog(){
+            document.querySelector('dialog').close();
+        }
+
+</script>
+</body>
+
+</html>
